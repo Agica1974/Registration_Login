@@ -102,7 +102,7 @@ function showRegistration() {
     const user = users.find(user => user.email === email && user.password === password);
   
     if (user) {
-      showCustomPrompt("Login erfolgreich!");
+      // showCustomPrompt("Login erfolgreich!");
       // Hier kannst du weiterleiten oder den Login-Status speichern
          window.location.href = "dashboard.html";
          window.onload = createCalendar;
