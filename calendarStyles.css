@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* grid-template-rows: repeat  (3rem, 6); */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.week-row, .week {
+    display: contents;
+}
+
+.weekday, .day {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weekday {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.day {
+    background-color: #fff;
+    border: 1px solid #1f78ec;
+    height: calc(800px/9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.day[contenteditable="true"] {
+    outline: none;
+    
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    
+    width: fit-content;
+    gap: 2rem;
+}
+
+.empty {
+    background: none;
+    border: none;
+}
+.color-picker {
+    width: 30px;
+    height: 30px;
+}
+/* Sicherstellen, dass die Schicht-Eingabefelder sichtbar sind */
+.shift-input {
+    width: 50px;
+    height: 30px;  /* Optional: Höhe hinzufügen für eine bessere Benutzererfahrung */
+    text-align: center;
+    display: inline-block;  /* Verhindert, dass es in einer neuen Zeile steht */
+    margin-top: 5px; /* Falls du etwas Platz über dem Eingabefeld haben möchtest */
+    font-size: 14px;  /* Optional: Schriftgröße für bessere Lesbarkeit */
+}

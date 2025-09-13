@@ -1,0 +1,75 @@
+body {
+    background-color: #155b8a;
+  }
+  .container {
+    width: 90%;
+    display: flex;
+    border: 1px solid  white;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 40px;
+    margin: 40px auto 0; /* 40px oben, auto links/rechts, 0 unten */
+    text-align: center;
+  }
+  h1{
+    color: whitesmoke;
+    
+  }
+
+  h2 {
+    color: whitesmoke;
+  }
+
+  .nameHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 200px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    border: solid 1px white;
+    border-radius: 6px;
+  }
+  .colorContainer {
+    display: flex;
+    border: 1px solid  white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    gap: 1px;
+    margin-top: 1px;
+    margin-left: 4rem;
+    border-radius: 3px;
+  }
+  .red {
+    background-color: #f44336;
+    height: 100px;
+    width: 200px;
+  }
+  .white {
+    background-color: white;
+    height: 100px;
+    width: 200px;
+  }
+  .green {
+    background-color: green;
+    height: 100px;
+    width: 200px;
+  }
+  .black {
+    background-color: black;
+    height: 100px;
+    width: 200px;
+  }
+  .gold {
+    background-color: gold;
+    height: 100px;
+    width: 200px;
+  }
+  .color-picker {
+    height: 100px;
+    width: 100px;
+  }
